@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Minha Feira Favorita</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Minha Feira Favorita</h1>
+		<p>Escolhas frescas para a semana.</p>
+	</header>
+	
+	<nav>
+		<a href="#produtos">Produtos</a>
+		<a href="#precos">Preços</a>
+		<a href="#contato">Sugira um produto</a>
+	</nav>
+	<main>
+		<section id="produtos">
+			<h2>Produtos de hoje</h2>
+			<img src="feira.png" alt="Imagem ilustrativa de produtos de feira">
+			<ul>
+				<li>Manga</li>
+				<li>Tapereba</li>
+				<li>Cupuaçu</li>
+				<li>Açai</li>
+				<li>Laranja</li>
+				<li>Kiwi</li>
+			</ul>
+			<h3>Como escolher uma fruta madura</h3>
+			<ol>
+				<li>Observa o cheiro</li>
+				<li>Verifica partes estragadas</li>
+				<li>Ver se não ta verde</li>
+			</ol>
+		</section>
+		<section id="precos">
+			<p id="mensagem">Confira os produtos disponíveis na nossa feira.</p>
+			<table>
+				<caption>Produtos disponíveis na feira</caption>
+				<thead> 
+					<tr>
+						<th scope="col">Produtos</th>
+						<th scope="col">Qtd</th>
+						<th scope="col">Preço</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Manga</td>
+						<td>1 kg</td>
+						<td>R$ 6,00</td>
+					</tr>
+					<tr>
+						<td>Cajá</td>
+						<td>1 kg</td>
+						<td>R$ 10,00</td>
+					</tr>
+					<tr>
+						<td>Morango</td>
+						<td>200 g</td>
+						<td>R$ 15,00</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3"> Preços atualizados semanalmente</td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+		<section id="contato">
+			<h4>Envie sua sugestão</h4>
+			<form>
+			<!-- Façam um formulário com uma campo de nome <input> e um 
+			campo de sugestão <textarea>
+			Coloquem um botão de Enviar sugestão <button> -->
+				<div>
+					<label for="nome">Nome Completo: </label>
+					<input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
+				</div>
+
+				<div>
+					<label for="email">E-mail: </label>
+					<input id="email" type="email" placeholder="seu@email.com" required>
+				</div>
+				<div>
+					<label for="sugestao">Sua sugestao: </label>
+					<textarea id="sugestao" name="sugestao" placeholder="Digite sua sugestão" rows="5"></textarea>
+				</div>
+
+				<fieldset>
+					<legend>Como você conheceu nossa feira???</legend>
+					<label>
+						<input type="radio" name="origem" value="amigos">
+						Indicação de amigos
+					</label>
+					<label>
+						<input type="radio" name="origem" value="redes">
+						Redes sociais
+					</label>
+					<label>
+						<input type="checkbox" name="selecao" value="novidades">
+						Quero receber nossas novidades
+					</label>
+					<label>
+						<input type="checkbox" name="selecao" value="Aceito">
+						Aceito os termos de uso
+					</label>
+				</fieldset>
+
+				<button type="submit">Enviar Sugestão</button>
+
+			</form>
+
+			
+		</section>
+		<button id="modoLeitura">Ativar destaque</button>
+
+	</main>
+	<footer>
+		<p>Projeto desenvolvido durante a aula de Introdução à Web.</p>
+		<p>
+			<a href="https://www.w3schools.com/html/">
+				Consultar referencias
+			</a>
+		</p>
+	</footer>
+<script src="script.js"></script>
+</body>
+
+</html>
